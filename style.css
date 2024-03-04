@@ -1,0 +1,540 @@
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle at bottom center, rgb(5,67,140) 0%, rgb(5,67,140) 32%,transparent 32%, transparent 40%,transparent 40%, transparent 100%),radial-gradient(circle at center center, rgb(5,67,140) 0%, rgb(5,67,140) 23%,transparent 23%, transparent 36%,transparent 36%, transparent 100%),linear-gradient(90deg, rgb(8,50,111),rgb(8,50,111)); background-size: 50px 50px;}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: repeating-linear-gradient(135deg, hsla(35,0%,71%,0.09) 0px, hsla(35,0%,71%,0.09) 1px,transparent 1px, transparent 11px),repeating-linear-gradient(45deg, hsla(35,0%,71%,0.09) 0px, hsla(35,0%,71%,0.09) 1px,transparent 1px, transparent 11px),linear-gradient(90deg, hsl(183,0%,100%),hsl(183,0%,100%));}
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+h1 {
+    font-size: 42px;
+    margin: 0;
+    color: #333;
+}
+p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #0c0707;
+}
+.section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.section h2 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    margin: 0;
+    font-size: 24px;
+    border-radius: 6px;
+}
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+.section li {
+    margin-bottom: 10px;
+}
+.section li:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+.profile-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+}
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+footer a:hover {
+    color: #f0f0f0;
+}
+/* Íconos */
+.section i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #007bff;
+}
+.perfil-usuario {
+    background: linear-gradient(#3FD0F4, transparent);
+    color: #333;
+}
+.perfil-usuario .sombra {
+    position: absolute;
+    display: block;
+    background: linear-gradient(transparent,rgba(0, 0, 0, .5));
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+}
+.perfil-usuario .portada-perfil,
+.perfil-usuario .sombra {
+    border-radius: 0 0 20px 20px;
+}
+.perfil-usuario img {
+    width: 100%;
+}
+.contenedor-perfil {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.perfil-usuario .contenedor-perfil {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.perfil-usuario .portada-perfil {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 20rem;
+    margin-bottom: .5rem;
+}
+.perfil-usuario .avatar-perfil {
+    display: block;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    bottom: -65px;
+    left: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, .2);
+}
+.perfil-usuario .avatar-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.perfil-usuario .cambiar-foto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .5);
+    height: 57%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: all ease-in 200ms;
+}
+.perfil-usuario .cambiar-foto i {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+.perfil-usuario .avatar-perfil:hover .cambiar-foto {
+    transform: translateY(0);
+    opacity: 1;
+}
+.perfil-usuario .datos-perfil {
+    position: absolute;
+    display: block;
+    width: calc(100% - 230px - 8rem);
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+.perfil-usuario .titulo-usuario {
+    font-size: 2.1rem;
+    white-space: nowrap;
+    margin-bottom: 0.25rem; /* Ajusta el margen inferior según tus preferencias */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para la bio del usuario */
+.perfil-usuario .bio-usuario {
+    font-size: 2.5rem; /* Tamaño de fuente más grande para bio-usuario */
+    margin-bottom: 0.5rem; /* Ajusta el margen inferior según tus preferencias */
+    color: #fff;
+    font-weight: bold; /* Texto en negrita */
+} 
+.perfil-usuario .lista-perfil {
+    list-style: none;
+}
+.perfil-usuario .lista-perfil li {
+    display: inline-block;
+    font-size: 1em;
+    margin-right: 1rem;
+}
+.perfil-usuario .opcciones-perfil {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+.perfil-usuario .opcciones-perfil button {
+    border: 0;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    cursor: pointer;
+}
+.perfil-usuario .menu-perfil ul {
+    display: flex;
+    list-style: none;
+    margin-left: calc(200px + 8rem);
+    width: calc(100% - 200px - 8rem);
+}
+.perfil-usuario .menu-perfil ul li {
+    margin-right: 1px;
+}
+.perfil-usuario .menu-perfil a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 2px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all ease-in 100ms;
+}
+.perfil-usuario .menu-perfil a:hover {
+    background-color: #4CB0C6;
+    color: #fff;
+}
+@media (max-width: 780px) {
+    .perfil-usuario .contenedor-perfil {
+        width: 100%;
+    }
+    .perfil-usuario .avatar-perfil {
+        left: calc(50% - 115px)
+    }
+    .perfil-usuario .datos-perfil {
+        bottom: 200px;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+    .perfil-usuario .bio-usuario {
+        font-size: 1em;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .perfil-usuario .titulo-usuario {
+        font-size: 2.1rem;
+    }
+    .perfil-usuario .portada-perfil {
+        height: 28rem;
+    }
+    .perfil-usuario .menu-perfil ul {
+        flex-direction: column;
+    }
+    .perfil-usuario .lista-perfil {
+        display: block;
+    }
+    .perfil-usuario .menu-perfil {
+        margin-top: 2rem;
+    }
+    .perfil-usuario .menu-perfil ul {
+        display: flex;
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 2.5rem;
+        width: 70%;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 0 12px 2px rgba(0, 0, 0, .1);
+        padding: 2.5rem 0;
+    }
+    .perfil-usuario .icono-perfil {
+        display: inline-block;
+    }
+    .container {
+        
+        background-image: repeating-linear-gradient(90deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    }
+}
+@media (max-width: 320px) {
+    .perfil-usuario .contenedor-perfil {
+        width: 100%;
+        overflow: hidden; /* Evitar scroll horizontal */
+    }
+    .perfil-usuario .avatar-perfil {
+        left: calc(50% - 115px);
+    }
+    .perfil-usuario .datos-perfil {
+        bottom: 200px;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+    .perfil-usuario .bio-usuario {
+        font-size: 1em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .perfil-usuario .titulo-usuario {
+        font-size: 2.1rem;
+        text-align: center; /* Centrar el texto horizontalmente */
+    }
+    .perfil-usuario .portada-perfil {
+        height: 28rem;
+    }
+    .perfil-usuario .menu-perfil ul {
+        flex-direction: column;
+        align-items: center; /* Centrar horizontalmente */
+        padding: 0; /* Eliminar el relleno predeterminado */
+    }
+    .perfil-usuario .lista-perfil {
+        display: block;
+    }
+    .perfil-usuario .menu-perfil {
+        margin-top: 2rem;
+    }
+    .perfil-usuario .menu-perfil ul {
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente */
+        list-style: none;
+        padding: 2.5rem 0; /* Añadir espacio en la parte superior e inferior */
+        width: 100%; /* Cambiar a 100% para que ocupe todo el ancho disponible */
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Evitar scroll horizontal */
+    }
+    .perfil-usuario .icono-perfil {
+        display: inline-block;
+    }
+    /* Agregar estilos :hover aquí si es necesario */
+    p {
+        font-size: 16px; /* Cambia el tamaño de fuente para pantallas de 320px */
+        margin: 5px 0;
+        color: #0c0707;
+    }
+    .container {
+        
+        background-image: repeating-linear-gradient(90deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    }
+}
+/* Estilos para la sección */
+.section {
+    margin: 20px auto; /* Márgenes de 20px en los lados izquierdo y derecho, y centrar horizontalmente */
+    padding: 20px; /* Relleno de 20px dentro de la sección */
+    border: 1px solid #ccc; /* Borde de 1px con color gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra todo el contenido horizontalmente */
+}
+/* Estilos para el título */
+.section h2 {
+    margin-top: 20px; /* Margen superior de 20px para el título */
+    text-align: center; /* Centra los títulos horizontalmente */
+}
+/* Estilos para el párrafo */
+.section p {
+    margin-bottom: 10px; /* Márgenes en la parte inferior del párrafo */
+    text-align: center; /* Centra el texto dentro de los párrafos */
+}
+/* Estilos para el contenedor de los botones */
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* Estilos para los botones individuales */
+.btn-item {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 55px;
+    color: white;
+    cursor: pointer;
+    min-width: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+
+/* Estilos para el texto del botón */
+.btn-name {
+    margin-right: 20px;
+    font-size: 20px;
+}
+/* Estilos para los iconos del botón */
+.btn-icon {
+    font-size: 24px;
+}
+/* Estilos para resoluciones mayores a 320px */
+.menu-perfil {
+    display: block;
+}
+.menu-perfil ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu-perfil li {
+    margin-bottom: 10px;
+}
+.menu-perfil a {
+    text-decoration: none;
+    color: #333;
+}
+/* Estilos para resoluciones menores o iguales a 320px (dispositivos móviles) */
+@media (max-width: 320px) {
+    .menu-perfil li {
+        text-align: center; /* Centra los elementos */
+    }
+    .menu-perfil a {
+        display: block; /* Convierte los elementos en bloques para ocupar todo el ancho */
+        padding: 10px 0; /* Añade espacio alrededor del enlace para hacerlo más grande y fácil de tocar en pantallas táctiles */
+    }
+}
+
+/* Estilos para los botones */
+.btn-item {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 55px;
+    color: white;
+    cursor: pointer;
+    min-width: 200px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilos para los botones de redes sociales */
+.facebook, .whatsapp, .linkedin, .email, .github {
+    border: 1px solid transparent;
+}
+
+.facebook {
+    background: rgb(59, 89, 153);
+}
+
+.whatsapp {
+    background: rgb(37, 211, 102);
+}
+
+.linkedin {
+    background: rgb(0, 119, 181);
+}
+
+.email {
+    background: rgb(23, 105, 255);
+}
+
+/* Estilos para el botón GitHub */
+.github {
+    background-color: #2ea44f; /* Color de fondo similar a GitHub */
+    border-color: #e1e4e8; /* Color del borde similar a GitHub */
+    color: #ffffff; /* Color del texto */
+    font-weight: bold;
+    padding:  20px;
+    text-decoration: none;
+    display: flex; /* Para centrar contenido verticalmente */
+    justify-content: center; /* Para centrar contenido horizontalmente */
+    align-items: center; /* Para centrar contenido verticalmente */
+
+
+}
+
+/* Efecto hover para todos los botones */
+.btn-item:hover {
+    background-color: #3f5e9b; /* Color de fondo al pasar el mouse */
+    border-color: #385898; /* Color del borde al pasar el mouse */
+}
+
+.github:hover {
+    background-color: #218c42; /* Color de fondo al pasar el mouse */
+    border-color: #218c42; /* Color del borde al pasar el mouse */
+}
+
+
+/* Boton de descarga de PDF */
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Formato para imprimir */
+@media print {
+    body {
+        font-family: Arial, sans-serif;
+        color: #000;
+        background-color: #fff;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+
+    header, footer, .no-print {
+        display: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ... other styles ... */
+}

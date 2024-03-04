@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website"> 
+    <meta property="og:url" content="https://ejemplo.com/CV">
+    <meta property="og:title" content="Currículum Vitae">
+    <meta property="og:description" content="CV de Hector Daniel Ayarachi Fuentes
+    .">
+    <meta property="og:image" content="https://ejemplo.com/JuanPerez.png"> 
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <link rel="stylesheet" href="./style.css" />
+    <link type="image/png" sizes="120x120" rel="icon" href="Favicon/ms-icon-310x310.png">
+    <title>Currículum Vitae</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <section class="perfil-usuario">
+                <div class="contenedor-perfil">
+                    <div class="portada-perfil" style="background-image: url('https://ejemplo.com/imagen-portada.jpg');">
+                        <div class="sombra"></div>
+                        <div class="avatar-perfil">
+                            <img src="https://ejemplo.com/imagen-perfil.jpg" alt="Hector Daniel Ayarachi Fuentes
+                            ">
+                            <a href="#" class="cambiar-foto">
+                                <i class="fas fa-camera"></i>
+                                <span>🔧 Téc. en RR.HH. 🔧</span>
+                            </a>
+                        </div>
+                        <div class="datos-perfil">
+                            <h4 class="titulo-usuario">Hector Daniel
+Ayarachi Fuentes</h4>
+                           
+                        </div>
+                    </div>
+                    <div class="menu-perfil">
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="icono-perfil fas fa-map-marker-alt"></i> Ciudad, País</a></li>
+                            <li><a href="#" target="_blank"><i class="icono-perfil fas fa-city"></i> Ciudad de Ejemplo</a></li>
+                            <li><a href="tel:+123456789"><i class="icono-perfil fas fa-phone"></i> +123 456 789</a></li>
+                            <li><a href="mailto:juan.perez@ejemplo.com"><i class="icono-perfil fas fa-envelope"></i> juan.perez@ejemplo.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <div class="datos-personales">
+            <section class="section" id="resumen">
+                <h2>Resumen</h2>
+                <p>Profesional de Recursos Humanos apasionado y dedicado con una sólida experiencia en adquisición de talento y relaciones laborales.</p>
+                <ul id="info-personal">
+                    <li><strong>Fecha de Nacimiento:</strong> 1 de enero de 1985</li>
+                    <li><strong>Nacionalidad:</strong> Nacionalidad de Ejemplo</li>
+                </ul>
+            </section>
+            <section class="section" id="experiencia-laboral">
+                <h2>Experiencia Laboral 🏢</h2>
+                <ul>
+                    <li>
+                        <h3>Especialista en RR.HH. - Empresa ABC</h3>
+                        <p>Manejó procesos de reclutamiento, realizó entrevistas e implementó políticas de Recursos Humanos. Incrementó la satisfacción de los empleados en un 20%.</p>
+                    </li>
+                    <li>
+                        <h3>Coordinador de RR.HH. - Corporación XYZ</h3>
+                        <p>Coordinó programas de formación para empleados y facilitó la comunicación entre la gerencia y el personal. Mejoró la eficiencia general del equipo.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="educacion">
+                <h2>Educación 📚</h2>
+                <ul>
+                    <li>
+                        <h3>Grado en Gestión de Recursos Humanos - Universidad de Ejemplo</h3>
+                        <p>Graduado con honores en 2007. Tesis enfocada en enfoques modernos para la participación de los empleados.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="habilidades">
+                <h2>Habilidades 🛠️</h2>
+                <ul>
+                    <li>Selección y Contratación</li>
+                    <li>Relaciones Laborales</li>
+                    <li>Formación y Desarrollo</li>
+                    <li>Resolución de Conflictos</li>
+                </ul>
+            </section>
+            <footer>
+                <button onclick="downloadPDF()">Descargar CV en PDF</button>
+                <div class="social-buttons flex-column">
+                    <div class="btn-item rect facebook">
+                        <a href="#" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            <span class="btn-name">Facebook</span>
+                        </a>
+                    </div>
+                    <div class="btn-item rect whatsapp">
+                        <a href="https://wa.me/123456789" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="btn-name">WhatsApp</span>
+                        </a>
+                    </div>
+                    <div class="btn-item rect linkedin">
+                        <a href="https://www.linkedin.com/in/juanperez/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span class="btn-name">LinkedIn</span>
+                        </a>
+                    </div>
+                    <div class="btn-item rect email">
+                        <a href="mailto:juan.perez@ejemplo.com" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                            <span class="btn-name">Correo Electrónico</span>
+                        </a>
+                    </div>
+                    <div class="btn-item rect github">
+                        <a href="https://github.com/juanperez" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span class="btn-name">GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+</body>
+</html>
