@@ -520,3 +520,16 @@ button:hover {
    }
    
    
+   @media (max-width:780px){
+
+    /* Paragraph */
+    .perfil-usuario div p{
+     font-size:31px !important;
+    }
+    
+    /* Datos perfil */
+    .perfil-usuario div .datos-perfil{
+     left:-8px;
+    }
+    
+   }
