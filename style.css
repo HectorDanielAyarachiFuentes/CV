@@ -538,3 +538,11 @@ button:hover {
 
     /* ... other styles ... */
 }
+
+/* Menu perfil */
+.perfil-usuario .menu-perfil{
+    position:relative;
+    top:16px;
+   }
+   
+   
