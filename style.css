@@ -554,3 +554,11 @@ button:hover {
    }
    
    
+
+   .container button{
+	border-top-left-radius:50px;
+	border-bottom-right-radius:2px;
+	border-bottom-left-radius:1px;
+	border-top-right-radius:50px;
+}
+
