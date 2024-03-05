@@ -22,3 +22,23 @@
 
     html2pdf().from(body).set(opt).save();
 }
+
+ // Función para calcular la edad
+ function calcularEdad(fechaNacimiento) {
+    var hoy = new Date();
+    var fechaNac = new Date(fechaNacimiento);
+    var edad = hoy.getFullYear() - fechaNac.getFullYear();
+    var mes = hoy.getMonth() - fechaNac.getMonth();
+
+    if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNac.getDate())) {
+        edad--;
+    }
+
+    return edad;
+}
+
+// Fecha de nacimiento proporcionada (30 de noviembre de 1990)
+var fechaNacimiento = new Date('1990-11-30');
+
+// Calcula la edad y actualiza el elemento HTML
+document.getElementById('edad').innerText = calcularEdad(fechaNacimiento);
