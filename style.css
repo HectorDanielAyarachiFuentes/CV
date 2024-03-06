@@ -563,7 +563,7 @@ button:hover {
 	border-bottom-left-radius:1px;
 	border-top-right-radius:50px;
 }
-.menu-perfil {
+.cambiar-foto {
     cursor: url('objetivo.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
