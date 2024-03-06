@@ -568,3 +568,14 @@ button:hover {
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
   
+
+  .datos-personales  {
+    cursor: url('escribe.png'), auto;
+    cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
+  }
+  
+  #experiencia-laboral{
+    cursor: url('escribe.png'), auto;
+    cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
+  }
+  
