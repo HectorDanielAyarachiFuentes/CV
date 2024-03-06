@@ -3,7 +3,6 @@ body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;
-    cursor: url('flecha (1).png'), pointer;
 
     background-image: radial-gradient(circle at bottom center, rgb(5,67,140) 0%, rgb(5,67,140) 32%,transparent 32%, transparent 40%,transparent 40%, transparent 100%),radial-gradient(circle at center center, rgb(5,67,140) 0%, rgb(5,67,140) 23%,transparent 23%, transparent 36%,transparent 36%, transparent 100%),linear-gradient(90deg, rgb(8,50,111),rgb(8,50,111)); background-size: 50px 50px;}
 .container {
@@ -561,8 +560,10 @@ button:hover {
 	border-top-left-radius:50px;
 	border-bottom-right-radius:2px;
 	border-bottom-left-radius:1px;
-	border-top-right-radius:50px;
+	border-top-right-radius:50px;  
 }
+
+/* ANIMACION DE MOUSE Y PUNTEROS */
 .cambiar-foto {
     cursor: url('objetivo.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
@@ -596,3 +597,35 @@ button:hover {
   }
   
   
+
+
+  body{
+    animation: animate 0.6s infinite;
+  }
+  @keyframes animate{
+   0%{
+    cursor: url("animado/frame_0_delay-0.01s.gif") , auto;
+   }
+   20%{
+    cursor: url("animado/frame_1_delay-0.01s.gif") , auto;
+   }
+   40%{
+    cursor: url("animado/frame_2_delay-0.01s.gif") , auto;
+   }
+   60%{
+    cursor: url("animado/frame_3_delay-0.01s.gif") , auto;
+   }
+   80%{
+    cursor: url("animado/frame_4_delay-0.01s.gif") , auto;
+   }
+   100%{
+    cursor: url("animado/frame_5_delay-0.01s.gif") , auto;
+   }
+  }
+
+/* PARA VOLVER A UN MOUES ESTATICO BORRA EL BODY Y SUS CURSORES Y PEGA ESO AL BODY
+ES UN CURSOR DE UNA PALETA DULCE COMO LA BELLA DULCE LA PERRITA DE LA FOTO
+
+  cursor: url('flecha (1).png'), pointer;
+
+*/
