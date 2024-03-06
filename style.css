@@ -597,6 +597,51 @@ button:hover {
   }
   
   
+  .perfil-usuario .menu-perfil a, 
+  .social-buttons .btn-item,
+  .social-buttons a .btn-name,
+  .social-buttons a,
+  .download-button-container  {
+    animation: animateCursor 0.6s infinite; /* Applying the animation */
+}
+
+@keyframes animateCursor {
+    0% {
+        cursor: url("mano-cursor/frame_00_delay-0.01s.gif"), auto;
+    }
+    10% {
+        cursor: url("mano-cursor/frame_01_delay-0.01s.gif"), auto;
+    }
+    20% {
+        cursor: url("mano-cursor/frame_02_delay-0.01s.gif"), auto;
+    }
+    30% {
+        cursor: url("mano-cursor/frame_03_delay-0.01s.gif"), auto;
+    }
+    40% {
+        cursor: url("mano-cursor/frame_04_delay-0.01s.gif"), auto;
+    }
+    50% {
+        cursor: url("mano-cursor/frame_05_delay-0.01s.gif"), auto;
+    }
+    60% {
+        cursor: url("mano-cursor/frame_06_delay-0.01s.gif"), auto;
+    }
+    70% {
+        cursor: url("mano-cursor/frame_07_delay-0.01s.gif"), auto;
+    }
+    80% {
+        cursor: url("mano-cursor/frame_08_delay-0.01s.gif"), auto;
+    }
+    90% {
+        cursor: url("mano-cursor/frame_09_delay-0.01s.gif"), auto;
+    }
+    100% {
+        cursor: url("mano-cursor/frame_10_delay-0.01s.gif"), auto;
+    }
+ 
+
+}
 
 
   body{
@@ -622,6 +667,10 @@ button:hover {
     cursor: url("animado/frame_5_delay-0.01s.gif") , auto;
    }
   }
+
+
+
+
 
 /* PARA VOLVER A UN MOUES ESTATICO BORRA EL BODY (ESE QUE DICE BODY ANIMATION) Y SUS CURSORES Y PEGA ESO AL BODY AL ORIGINAL
 ES UN CURSOR DE UNA PALETA DULCE COMO LA BELLA DULCE LA PERRITA DE LA FOTO
