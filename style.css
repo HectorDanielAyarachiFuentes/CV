@@ -601,7 +601,7 @@ button:hover {
   .social-buttons .btn-item,
   .social-buttons a .btn-name,
   .social-buttons a,
-  .download-button-container  {
+  .download-btn {
     animation: animateCursor 0.6s infinite; /* Applying the animation */
 }
 
