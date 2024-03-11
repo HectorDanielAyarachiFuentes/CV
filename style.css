@@ -570,7 +570,14 @@ button:hover {
   }
   
 
-  .datos-personales  {
+ 
+  #resumen p  {
+    cursor: url('escribe.png'), auto;
+    cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
+  }
+  
+
+  #datos-personales p  {
     cursor: url('escribe.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
@@ -596,6 +603,11 @@ button:hover {
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
   
+
+
+
+
+
   
   .perfil-usuario .menu-perfil a, 
   .social-buttons .btn-item,
