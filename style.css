@@ -565,37 +565,37 @@ button:hover {
 
 /* ANIMACION DE MOUSE Y PUNTEROS */
 .cambiar-foto {
-    cursor: url('objetivo.png'), auto;
+    cursor: url('punteros/objetivo.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
   
 
  
   #resumen p, #resumen li  {
-    cursor: url('escribe.png'), auto;
+    cursor: url('punteros/escribe.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
   
 
   #datos-personales p  {
-    cursor: url('escribe.png'), auto;
+    cursor: url('punteros/escribe.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
   
   #experiencia-laboral p {
-    cursor: url('escribe.png'), auto;
+    cursor: url('punteros/escribe.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
   
  
   #educacion li{
-    cursor: url('escribe.png'), auto;
+    cursor: url('punteros/escribe.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
   
   
   #habilidades li{
-    cursor: url('escribe.png'), auto;
+    cursor: url('punteros/escribe.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
   
