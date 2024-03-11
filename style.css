@@ -571,7 +571,7 @@ button:hover {
   
 
  
-  #resumen p  {
+  #resumen p, #resumen li  {
     cursor: url('escribe.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
