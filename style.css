@@ -544,7 +544,7 @@ button:hover {
 
 
 /* fondo a los headers titulos */
-#experiencia-laboral h2,#resumen h2, #educacion h2, #habilidades h2{
+#experiencia-laboral h2,#resumen h2, #educacion h2, #habilidades h2, #datos-personales h2{
     box-shadow:0px 0px 50px 0px #6ba4ef;
    }
    
