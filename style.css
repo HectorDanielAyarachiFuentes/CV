@@ -582,16 +582,12 @@ button:hover {
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
   
-  #experiencia-laboral{
+  #experiencia-laboral p{
     cursor: url('escribe.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
   }
   
-  #experiencia-laboral li{
-    cursor: url('escribe.png'), auto;
-    cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
-  }
-  
+ 
   #educacion li{
     cursor: url('escribe.png'), auto;
     cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
