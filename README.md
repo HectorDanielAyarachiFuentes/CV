@@ -59,20 +59,20 @@ Contactos
 
 
 
-## Vista previa del CV  
+## Vista previa del CV en responsivo     
 
 
-You can see [PDF](https://hectordanielayarachifuentes.github.io/CV/)
+Podes verlo en [PDF](https://hectordanielayarachifuentes.github.io/CV/)
 
-| Page. 1 | Page. 2 |
+| Movil | Notebook |
 |:---:|:---:|
 | [![Résumé](https://github.com/HectorDanielAyarachiFuentes/CURRICULUM-VITAE-HECTOR-DANIEL-AYARACHI-FUENTES/blob/main/ImagenesReadme/Celular.png?raw=true)](https://hectordanielayarachifuentes.github.io/CV/)  | [![Résumé](https://github.com/HectorDanielAyarachiFuentes/CURRICULUM-VITAE-HECTOR-DANIEL-AYARACHI-FUENTES/blob/main/ImagenesReadme/Notebook.png?raw=true)](https://hectordanielayarachifuentes.github.io/CV/) |
 
-#### Cover Letter
+#### Vista previa del CV  
 
-You can see [PDF](https://hectordanielayarachifuentes.github.io/CV/)
+Podes verlo en [PDF](https://hectordanielayarachifuentes.github.io/CV/)
 
-| Without Sections | With Sections |
+| Tablet | Vista completa |
 |:---:|:---:|
 | [![Cover Letter(Traditional)](https://github.com/HectorDanielAyarachiFuentes/CURRICULUM-VITAE-HECTOR-DANIEL-AYARACHI-FUENTES/blob/main/ImagenesReadme/tablet.png?raw=true)](https://hectordanielayarachifuentes.github.io/CV/)  | [![Cover Letter(Awesome)](https://github.com/HectorDanielAyarachiFuentes/CURRICULUM-VITAE-HECTOR-DANIEL-AYARACHI-FUENTES/blob/main/ImagenesReadme/totalcv.png?raw=true)](https://hectordanielayarachifuentes.github.io/CV/) |
 
