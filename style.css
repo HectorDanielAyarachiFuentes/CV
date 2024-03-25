@@ -679,6 +679,8 @@ button:hover {
 
 
 
+  body footer{ box-shadow:0px 0px 21px 0px #ffffff; }
+
 
 
 /* PARA VOLVER A UN MOUES ESTATICO BORRA EL BODY (ESE QUE DICE BODY ANIMATION) Y SUS CURSORES Y PEGA ESO AL BODY AL ORIGINAL
