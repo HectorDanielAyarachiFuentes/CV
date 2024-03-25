@@ -600,8 +600,11 @@ button:hover {
   }
   
 
-
-
+  #experiencia-laboral li{
+    cursor: url('punteros/escribe.png'), auto;
+    cursor-size: 16px 16px; /* Ajustar el tamaño del cursor */
+  }
+  
 
 
   /* Animacion mano */
